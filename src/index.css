@@ -46,7 +46,7 @@ ul.nav{
 ul li {
   padding: 0 1rem;
 }
-.hero {
+.header {
   height: 400px;
   display: flex;
   padding: 0 17rem;
@@ -54,28 +54,28 @@ ul li {
   grid-column: 1/13;
   background-color: var(--primarygreen);
 }
-.hero h1 {
+.header h1 {
   font-family: "medium";
   font-size: 4rem;
   margin: 0;
   color: var(--primaryyellow);
 }
-.hero h3, .hero p {
+.header h3, .header p {
   margin-top: 0;
   color: var(--highlightwhite);
 }
-.hero h3 {
+.header h3 {
   font-size: 2rem;
 }
-.hero p {
+.header p {
   font-size: 1.3rem;
 }
-.hero > div {
+.header > div {
   display: flex;
   flex-direction: column;
   width: 400px;
 }
-.hero > div > button {
+.header > div > button {
   background-color: var(--primaryyellow);
   color: black;
   border-radius: 15px;
@@ -86,7 +86,7 @@ ul li {
   padding: .5rem;
   cursor: pointer;
 }
-.hero .hero-image {
+.header .header-image {
   position: relative;
   top: 30px;
   width: 375px;

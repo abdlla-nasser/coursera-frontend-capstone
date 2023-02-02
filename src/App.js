@@ -20,7 +20,7 @@ function App() {
           </li>
         </ul>
       </nav>
-      <section className="hero">
+      <header className="header">
       <div>
       <div>
         <h1>Little Lemon</h1>
@@ -30,7 +30,7 @@ function App() {
         <button>Reserve a table</button>
       </div>
         <img className="hero-image" src={image} alt="logo" />
-      </section>
+      </header>
       <section className="highlights">
         <h1>This weeks specials!</h1>
         <button>Online Menu</button>
