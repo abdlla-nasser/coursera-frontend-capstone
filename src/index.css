@@ -1,6 +1,22 @@
+@font-face {
+  font-family: "regular";
+  src: local("karlaregular"),url("./fonts/Karla-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "medium";
+  src: local("markazimedium"),url("./fonts/MarkaziText-Medium.ttf") format("truetype");
+}
+:root{
+  --primarygreen: #495e57;
+  --primaryyellow: #f4ce14;
+  --secondaryorange: #ee9972;
+  --secondarybaige: #fbdabb;
+  --highlightwhite: #efefee;
+  --highlightblack: #333333;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: "regular", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +26,73 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.grid > nav {
+  grid-column: 1 / 13;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+ul.nav{
+  padding: 0 16rem;
+}
+ul li {
+  padding: 0 1rem;
+}
+.hero {
+  height: 400px;
+  display: flex;
+  padding: 0 17rem;
+  justify-content: space-between;
+  grid-column: 1/13;
+  background-color: var(--primarygreen);
+}
+.hero h1 {
+  font-family: "medium";
+  font-size: 4rem;
+  margin: 0;
+  color: var(--primaryyellow);
+}
+.hero h3, .hero p {
+  margin-top: 0;
+  color: var(--highlightwhite);
+}
+.hero h3 {
+  font-size: 2rem;
+}
+.hero p {
+  font-size: 1.3rem;
+}
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.hero > div > button {
+  background-color: var(--primaryyellow);
+  color: black;
+  border-radius: 15px;
+  box-shadow: 1px #efefee;
+  border: 0;
+  font-size: 1.3rem;
+  width: 15rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+.hero .hero-image {
+  position: relative;
+  top: 30px;
+  width: 375px;
+  margin-bottom: -50px;
+  border-radius: 20px;
+}
+.highlights {
+  padding-top: 100px;
 }
