@@ -2,7 +2,8 @@ import logo from "./assets/Logo.svg";
 import image from "./assets/restauranfood.jpg"
 function App() {
   return (
-    <div className="grid">
+    <div className="layout">
+    <header>
       <nav>
         <ul className="nav">
           <li>
@@ -20,24 +21,33 @@ function App() {
           </li>
         </ul>
       </nav>
-      <header className="header">
+    </header>
+      <main>
+      <section className="hero">
       <div>
-      <div>
-        <h1>Little Lemon</h1>
-        <h3>Chicago</h3>
-        <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-      </div>
+        <div>
+          <h1>Little Lemon</h1>
+          <h3>Chicago</h3>
+          <p>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+        </div>
         <button>Reserve a table</button>
       </div>
         <img className="hero-image" src={image} alt="logo" />
-      </header>
+      </section>
       <section className="highlights">
         <h1>This weeks specials!</h1>
         <button>Online Menu</button>
-        <card></card>
-        <card></card>
-        <card></card>
+        <div></div>
+        <div></div>
+        <div></div>
       </section>
+      <section className="testimonials"></section>
+      <section className="About">
+        <div className="about-text"></div>
+        <div className="about-images"></div>
+      </section>
+      </main>
+      <footer></footer>
     </div>
   );
 }

@@ -27,13 +27,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
-.grid > nav {
-  grid-column: 1 / 13;
-}
 ul {
   display: flex;
   justify-content: space-between;
@@ -44,9 +37,15 @@ ul.nav{
   padding: 0 16rem;
 }
 ul li {
-  padding: 0 1rem;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
 }
-.header {
+li > ul li:hover {
+  background-color: var(--primarygreen);
+  color: white;
+  cursor: pointer;
+}
+.hero {
   height: 400px;
   display: flex;
   padding: 0 17rem;
@@ -54,28 +53,28 @@ ul li {
   grid-column: 1/13;
   background-color: var(--primarygreen);
 }
-.header h1 {
+.hero h1 {
   font-family: "medium";
   font-size: 4rem;
   margin: 0;
   color: var(--primaryyellow);
 }
-.header h3, .header p {
+.hero h3, .hero p {
   margin-top: 0;
   color: var(--highlightwhite);
 }
-.header h3 {
+.hero h3 {
   font-size: 2rem;
 }
-.header p {
+.hero p {
   font-size: 1.3rem;
 }
-.header > div {
+.hero > div {
   display: flex;
   flex-direction: column;
   width: 400px;
 }
-.header > div > button {
+.hero > div > button {
   background-color: var(--primaryyellow);
   color: black;
   border-radius: 15px;
@@ -86,7 +85,7 @@ ul li {
   padding: .5rem;
   cursor: pointer;
 }
-.header .header-image {
+.hero .hero-image {
   position: relative;
   top: 30px;
   width: 375px;
@@ -96,3 +95,11 @@ ul li {
 .highlights {
   padding-top: 100px;
 }
+section {
+  display: flex;
+}
+/* div {
+  height: 300px;
+  width: 300px;
+  background-color: var(--highlightblack);
+} */
